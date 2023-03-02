@@ -5,7 +5,8 @@
 <meta charset="utf-8">
 <title>文档标题</title>
 <script>
-  dd.runtime.permission.requestAuthCode({
+  window.onload = function () {
+	dd.runtime.permission.requestAuthCode({
 	corpId: "ding61ec4de8afb670a6f5bf40eda33b7ba0",
 	onSuccess : function(res) {
 		// 调用成功时回调
@@ -15,8 +16,11 @@
 	onFail : function(err) {
 		// 调用失败时回调
 		console.log(err)
+		document.getElementById('test').innerHTML = JSON.stringify({key:1})
+
 	}
 });
+  }
 </script>
 </head>
 
