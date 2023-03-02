@@ -1,0 +1,14 @@
+<script>
+  dd.runtime.permission.requestAuthCode({
+	corpId: "ding61ec4de8afb670a6f5bf40eda33b7ba0",
+	onSuccess : function(res) {
+		// 调用成功时回调
+		console.log(res)
+    alert(res)
+	},
+	onFail : function(err) {
+		// 调用失败时回调
+		console.log(err)
+	}
+});
+</script>
