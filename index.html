@@ -7,20 +7,7 @@
 	<script src="https://g.alicdn.com/dingding/dingtalk-jsapi/3.0.12/dingtalk.open.js"></script>
 	<script>
 		window.onload = function () {
-			// dd.runtime.permission.requestAuthCode({
-			// 	corpId: "ding61ec4de8afb670a6f5bf40eda33b7ba0",
-			// 	onSuccess: function (res) {
-			// 		// 调用成功时回调
-			// 		console.log(res)
-			// 		document.getElementById('test').innerHtml = JSON.stringfy(res)
-			// 	},
-			// 	onFail: function (err) {
-			// 		// 调用失败时回调
-			// 		console.log(err)
-			// 		document.getElementById('test').innerHTML = JSON.stringify({ key: 1 })
 
-			// 	}
-			// });
 			dd.ready(function () {
 				// dd.ready参数为回调函数，在环境准备就绪时触发，jsapi的调用需要保证在该回调函数触发后调用，否则无效。
 				dd.runtime.permission.requestAuthCode({
@@ -31,7 +18,8 @@
 						}*/
 						console.log(res)
 						document.getElementById('test').innerHtml = JSON.stringfy(res)
-https://github.com/Mr0bean/mr0bean.github.io/blob/main/index.html
+						
+
 					},
 					onFail: function (err) {
 						console.log(err)
@@ -47,7 +35,7 @@ https://github.com/Mr0bean/mr0bean.github.io/blob/main/index.html
 </head>
 
 <body>
-	文档内2222容......
+文档内22223容......
 
 	<div id="test"></div>
 
