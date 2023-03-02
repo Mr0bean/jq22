@@ -10,7 +10,7 @@
 	onSuccess : function(res) {
 		// 调用成功时回调
 		console.log(res)
-    alert(res)
+		document.getElementById('test').innerHtml = JSON.stringfy(res)
 	},
 	onFail : function(err) {
 		// 调用失败时回调
@@ -22,6 +22,9 @@
 
 <body>
 文档内容......
+	
+	<div id="test"></div>
+	
 </body>
 
 </html>
